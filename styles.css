@@ -1,0 +1,166 @@
+.carousel-container{
+    width: 100%;
+    height: calc(30rem + 10vh);
+    border: thin solid black;
+
+}
+
+
+.header{
+    width: 100%;
+    height: calc(3rem + 2vh);
+    border: thin solid black;
+}
+
+.header nav{
+    margin: 0 2rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    align-items: center;
+    height: 100%;
+}
+
+.header nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.bar{
+    width: 95%;
+    margin: 4rem auto;
+    height: .5rem;
+    background-color: black;
+}
+
+
+
+/*   */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+.map {
+    background-color: #f0f0f0;
+    height: 800px; /* Ajusta la altura según sea necesario */
+}
+.office-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.office {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.grid-container {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+.map {
+    background-color: #f0f0f0;
+    height: 300px; /* Ajusta la altura según sea necesario */
+}
+.office-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.office {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.header nav a:nth-child(1){
+    opacity: .3;
+}
+
+.carousel-container{
+    width: 100%;
+    height: calc(30rem + 10vh);
+    border: thin solid black;
+
+}
+
+
+.carousel-container {
+    max-width: 80%;
+    margin: 40px auto;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: opacity 1s ease;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Controles */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+/* Indicadores */
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.carousel-indicators button {
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-indicators button.active {
+    background-color: rgba(255, 255, 255, 1);
+}

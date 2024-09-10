@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+}
+form {
+    display: grid;
+    gap: 10px;
+}
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+.form-group {
+    flex: 1;
+    margin-right: 10px;
+}
+.form-group:last-child {
+    margin-right: 0;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input, select {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+}
+.radio-group {
+    display: flex;
+}
+.radio-group label {
+    margin-right: 15px;
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.agendar {
+    background-color: #4CAF50;
+}
+.cancelar {
+    background-color: #f44336;
+}

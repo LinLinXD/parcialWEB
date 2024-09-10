@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Test Drive</title>
+    <link rel="stylesheet" href="stylesTestDrive.css">
+</head>
+<body>
+    <h1>Ingrese los datos para agendar el test drive</h1>
+    <form>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="nombres">Nombres</label>
+                <input type="text" id="nombres" name="nombres" required>
+            </div>
+            <div class="form-group">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="estrato">Estrato</label>
+                <input type="number" id="estrato" name="estrato" min="1" max="6" required>
+            </div>
+            <div class="form-group">
+                <label for="fecha-nacimiento">Fecha Nacimiento</label>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+            </div>
+            <div class="form-group">
+                <label for="grupo-sanguineo">Grupo Sanguíneo</label>
+                <select id="grupo-sanguineo" name="grupo-sanguineo" required>
+                    <option value="">Select</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label>Género</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="genero" value="masculino" required> Masculino
+                    </label>
+                    <label>
+                        <input type="radio" name="genero" value="femenino" required> Femenino
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Actividades Favoritas</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="actividades" value="futbol"> Fútbol</label>
+                    <label><input type="checkbox" name="actividades" value="baloncesto"> Baloncesto</label>
+                    <label><input type="checkbox" name="actividades" value="voleibol"> Voleibol</label>
+                    <label><input type="checkbox" name="actividades" value="ciclismo"> Ciclismo</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="fecha-test">Fecha solicitad para test drive</label>
+                <input type="date" id="fecha-test" name="fecha-test" required>
+            </div>
+            <div class="form-group">
+                <label for="hora-test">Hora solicitad para test drive</label>
+                <input type="time" id="hora-test" name="hora-test" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <button type="submit" class="agendar">Agendar</button>
+            <button type="button" class="cancelar">Cancelar</button>
+        </div>
+    </form>
+    <script src="testDriveJs.js"></script>
+</body>
+</html>
